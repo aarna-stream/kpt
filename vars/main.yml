@@ -1,0 +1,11 @@
+---
+# vars file for kpt
+kpt_platform: '{{ kpt_os }}_{{ kpt_arch }}'
+kpt_name: kpt_{{ kpt_platform }}-{{ kpt_ver }}
+kpt_archive: '{{ kpt_name }}.{{ kpt_archive_type | default("tar.gz") }}'
+kpt_tmp_archive: /tmp/{{ kpt_archive }}
+kpt_url: '{{ kpt_mirror }}/v{{ kpt_ver }}/{{ kpt_archive }}'
+kpt_checksum: '{{ kpt_checksums[kpt_ver][kpt_platform] }}'
+kpt_install_dir: '{{ kpt_parent_install_dir }}/{{ kpt_name }}'
+kpt_bin_exe: '{{ kpt_install_dir }}/kpt'
+kpt_link_exe: '{{ kpt_parent_install_dir }}/bin/kpt'

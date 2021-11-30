@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+  - role: '{{ playbook_dir }}'
+  tasks:
+    - command: /usr/local/bin/kpt version
+      register: test_kpt_version
+    - name: kpt version
+      debug:
+        msg: '{{ test_kpt_version.stdout }}'
