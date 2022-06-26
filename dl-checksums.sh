@@ -26,7 +26,7 @@ dl_ver() {
     local lchecksums=$DIR/$checksums
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $url
+        curl -sSLf -o $lchecksums $url
     fi
 
     printf "  # %s\n" $url
@@ -37,4 +37,4 @@ dl_ver() {
     dl $ver $lchecksums darwin amd64
 }
 
-dl_ver ${1:-1.0.0-beta.9}
+dl_ver ${1:-1.0.0-beta.17}
