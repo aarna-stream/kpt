@@ -1,5 +1,7 @@
 ---
 # vars file for kpt
+kpt_os: '{{ ansible_system | lower }}'
+kpt_arch: '{{ kpt_arch_map[ansible_architecture] }}'
 kpt_platform: '{{ kpt_os }}_{{ kpt_arch }}'
 kpt_name: kpt_{{ kpt_platform }}-{{ kpt_ver }}
 kpt_archive: '{{ kpt_name }}.{{ kpt_archive_type | default("tar.gz") }}'
