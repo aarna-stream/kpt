@@ -44,7 +44,7 @@
         src: '{{ kpt_tmp_archive }}'
         dest: '{{ kpt_install_dir }}'
         creates: '{{ kpt_bin_exe }}'
-        remote_src: yes
+        remote_src: true
   always:
     - name: rm -f {{ kpt_tmp_archive }}
       become: true

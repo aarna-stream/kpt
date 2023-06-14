@@ -37,4 +37,4 @@ dl_ver() {
     dl $ver $lchecksums darwin amd64
 }
 
-dl_ver ${1:-1.0.0-beta.24}
+dl_ver ${1:-1.0.0-beta.35}
