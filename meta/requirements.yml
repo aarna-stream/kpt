@@ -1,5 +1,5 @@
 ---
-- name: andrewrothstein.unarchive-deps
+- name: aarna_stream.unarchive-deps
   version: v1.2.5
-- name: andrewrothstein.git
+- name: aarna_stream.git
   version: v3.2.2

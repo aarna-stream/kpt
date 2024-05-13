@@ -1,4 +1,4 @@
-andrewrothstein.kpt
+aarna_stream.kpt
 =========
 
 ![Build Status](https://github.com/andrewrothstein/ansible-kpt/actions/workflows/build.yml/badge.svg)
@@ -26,7 +26,7 @@ Example Playbook
 ```yml
 - hosts: servers
   roles:
-    - andrewrothstein.kpt
+    - aarna_stream.kpt
 ```
 
 License
