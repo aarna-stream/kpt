@@ -1,8 +1,8 @@
 ---
 - include_role:
-    name: aarna_stream.unarchive-deps
+    name: aarna-stream.unarchive-deps
 - include_role:
-    name: aarna_stream.git
+    name: aarna-stream.git
 
 - name: resolve platform specific vars
   include_vars: '{{ item }}'

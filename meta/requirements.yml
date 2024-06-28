@@ -1,5 +1,5 @@
 ---
-- name: aarna_stream.unarchive-deps
+- name: aarna-stream.unarchive-deps
   version: v1.2.5
-- name: aarna_stream.git
+- name: aarna-stream.git
   version: v3.2.2
